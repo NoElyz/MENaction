@@ -1,0 +1,20 @@
+#///////////////////////////////////////////////////////////////////////#
+#						From the very beginning							#
+#																		#	
+# This README file was written by Zyleon on 2012/06/14 at Labo/Nighthawk#
+# It shall not be changed unless needed.								#
+#///////////////////////////////////////////////////////////////////////#
+#							Project MENaction							#
+#																		#
+# This Project is proposed to be a part of Zyleon's researching which i	#
+# -s about Melody Line Extraction From Polyphonic Music.				#
+#///////////////////////////////////////////////////////////////////////#
+#							Project Base								#
+#																		#
+# It's based on lib/FFmpeg and lib/math from the very beginning, shall	#
+# be changed into better way if exist.									#
+#///////////////////////////////////////////////////////////////////////#
+#							Project License								#
+#																		#
+# If exist, it will be GNU/GPL.											#
+#//////////////////////////////////////////////////////README_v0.120614/#
