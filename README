@@ -1,8 +1,8 @@
 #///////////////////////////////////////////////////////////////////////#
 #			From the very beginning				#
 #									#
-# This README file was written by Zyleon on 2012/06/14 at Labo/Nighthawk#
-# It shall not be changed unless needed.				#
+# This README file was written by Zyleon on 2012/06/14 at Labo/Nighthaw	#
+# -k. It shall not be changed unless needed.				#
 #///////////////////////////////////////////////////////////////////////#
 #			Project MENaction				#
 #									#
@@ -12,9 +12,20 @@
 #			Project Base					#
 #									#
 # It's based on lib/FFmpeg and lib/math from the very beginning, shall	#
-# be changed into better way if exist.					#
+# be changed into better way if exists.					#
 #///////////////////////////////////////////////////////////////////////#
 #			Project License					#
 #									#
 # If exist, it will be GNU/GPL.						#
-#//////////////////////////////////////////////////////README_v0.120614/#
+#//////////////////////////////////////////////////////README_v0.120621/#
+
+#///////////////////////////////////////////////////////////////////////#
+#			Compile						#
+#									#
+# For nomal compilation,use the "make" code as normally. See Makefile 	#
+# file for further information.						#
+#///////////////////////////////////////////////////////////////////////#
+#			Usage						#
+# Use "MENaction (media file which supported by FFmpeg)" code to see	#
+# the result.								#
+#///////////////////////////////////////////////////////////////////////#
