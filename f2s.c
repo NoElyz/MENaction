@@ -32,7 +32,7 @@ int main (int argc, char *argv[])
 //	printf ("%d\n",audioStream); //for test
 
 	if(SDL_OpenAudio(&wanted_spec, &spec)<0){
-			fprint(stderr,"SDL_OpenAudio:%s\n",SDL_GetError());
+			fprintf(stderr,"SDL_OpenAudio:%s\n",SDL_GetError());
 			return -1;
 	}
 	aCodec-avcodec_find_decoder(aCodecCtx->codec_id);
