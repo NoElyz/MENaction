@@ -5,15 +5,15 @@ CC?=gcc
 LD?=gcc
 
 # Pkg-Config
-BUILTIN_CFLAGS="$(BUILTIN_CFLAGS) $(shell pkg-config libavcodec --cflags)"
-BUILTIN_CFLAGS="$(BUILTIN_CFLAGS) $(shell pkg-config libavformat --cflags)"
-BUILTIN_CFLAGS="$(BUILTIN_CFLAGS) $(shell pkg-config libavutil --cflags)"
-BUILTIN_CFLAGS="$(BUILTIN_CFLAGS) $(shell pkg-config libswscale --cflags)"
+BUILTIN_CFLAGS:="$(BUILTIN_CFLAGS) $(shell pkg-config libavcodec --cflags)"
+BUILTIN_CFLAGS:="$(BUILTIN_CFLAGS) $(shell pkg-config libavformat --cflags)"
+BUILTIN_CFLAGS:="$(BUILTIN_CFLAGS) $(shell pkg-config libavutil --cflags)"
+BUILTIN_CFLAGS:="$(BUILTIN_CFLAGS) $(shell pkg-config libswscale --cflags)"
 
-BUILTIN_LDFLAGS="$(BUILTIN_LDFLAGS) $(shell pkg-config libavcodec --libs)"
-BUILTIN_LDFLAGS="$(BUILTIN_LDFLAGS) $(shell pkg-config libavformat --libs)"
-BUILTIN_LDFLAGS="$(BUILTIN_LDFLAGS) $(shell pkg-config libavutil --libs)"
-BUILTIN_LDFLAGS="$(BUILTIN_LDFLAGS) $(shell pkg-config libswscale --libs)"
+BUILTIN_LDFLAGS:="$(BUILTIN_LDFLAGS) $(shell pkg-config libavcodec --libs)"
+BUILTIN_LDFLAGS:="$(BUILTIN_LDFLAGS) $(shell pkg-config libavformat --libs)"
+BUILTIN_LDFLAGS:="$(BUILTIN_LDFLAGS) $(shell pkg-config libavutil --libs)"
+BUILTIN_LDFLAGS:="$(BUILTIN_LDFLAGS) $(shell pkg-config libswscale --libs)"
 
 
 OBJS=f2s.o
