@@ -28,7 +28,18 @@ int main (int argc, char *argv[])
 	if(audioStream==-1)
 		return -1; //didn't find a audio stream
 	// Get a pointer to the codec context for the video stream
-	aCodecCtx=pFormatCtx->streams[audioStream]->codec;
+	aCodecCtx-pFormatCtx->streams[audioStream]->codec;
 //	printf ("%d\n",audioStream); //for test
+
+	if(SDL_OpenAudio(&wanted_spec, &spec)<0){
+			fprint(stderr,"SDL_OpenAudio:%s\n",SDL_GetError());
+			return -1;
+	}
+	aCodec-avcodec_find_decoder(aCodecCtx->codec_id);
+	if(!aCodec){
+		fprintf(stderr,"Unsupported codec!\n");
+		return -1;
+	}
+	avcodec_open(aCodecCtx,aCodec);
 }
 
