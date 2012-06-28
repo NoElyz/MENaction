@@ -7,5 +7,7 @@
 # include <libavdevice/avdevice.h>
 # include <libavformat/avformat.h>
 # include <libavfilter/avfilter.h>
+# include <SDL/SDL.h>
+# include <SDL/SDL_thread.h>
 
 #endif
