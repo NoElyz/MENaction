@@ -2,6 +2,7 @@
 
 int avformat_network_init();
 
+
 int main (int argc, char *argv[])
 {
 	av_register_all(); // registed all file format
@@ -44,6 +45,7 @@ int main (int argc, char *argv[])
 		return -1;
 	}
 	avcodec_open(aCodecCtx,aCodec);
+}
 
 	// The queues part
 	typedef struct PacketQueue{
@@ -90,9 +92,9 @@ int main (int argc, char *argv[])
 		return 0;
 	}
 
-	int quit = 0;
+int quit = 0;
 
-	static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block){ // invalid storage class for function packet_queue_get appears
+static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block){ // invalid storage class for function packet_queue_get appears
 		AVPacketList *pkt1;
 		int ret;
 
@@ -129,5 +131,4 @@ int main (int argc, char *argv[])
 	SDL_UnlockMutex(q->mutex);
 	return ret;
 	}
-}
 
