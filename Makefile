@@ -1,10 +1,10 @@
 #Makefile for tutorial
 
-BUILTIN_CFLAGS=-std=c99
+BUILTIN_CFLAGS=-g -std=c99
 CC=gcc
 LD=gcc
-CFLAGS=`pkg-config libavformat --cflags` `pkg-config libavutil --cflags` `pkg-config libavcodec --cflags` `pkg-config libswscale --cflags`
-LIBS=`pkg-config libavformat --libs` `pkg-config libavcodec --libs` `pkg-config libswscale --libs` `pkg-config libavutil --libs`
+CFLAGS=`pkg-config libavformat --cflags` `pkg-config libavutil --cflags` `pkg-config libavcodec --cflags` `pkg-config libswscale --cflags` `pkg-config sdl --cflags`
+LIBS=`pkg-config libavformat --libs` `pkg-config libavcodec --libs` `pkg-config libswscale --libs` `pkg-config libavutil --libs` `pkg-config sdl --libs`
 
 OBJS=f2s.o
 TARGET=MENaction
